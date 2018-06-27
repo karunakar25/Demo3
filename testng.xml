@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionTestSuite" parallel="tests" thread-count="2" preserve-order="true">
+	<test name="Customer Module parallel execution in Chrome browser - 1">
+		<parameter name="myBrowser" value="chrome" />
+		<classes>
+			<class name="com.test.org.testAutomation.testCases.TC001_CustomerPortalLogin"/>      
+      		<class name="com.test.org.testAutomation.testCases.TC002_ValidateSideTabNavigations"/> 
+		</classes>
+	</test>
+	
+	<!-- >test name="Customer Module parallel execution in Chrome browser - 2">
+		<parameter name="myBrowser" value="firefox" />
+		<classes>
+			<class name="com.test.org.testAutomation.testCases.TC001_CustomerPortalLogin"/>      
+      		<class name="com.test.org.testAutomation.testCases.TC002_ValidateSideTabNavigations"/> 
+		</classes>
+	</test-->  
+</suite>
